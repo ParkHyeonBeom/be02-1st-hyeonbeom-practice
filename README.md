@@ -1,1 +1,12 @@
-# be02-1st-hyeonbeom-practice
+# Personal Introduction
+
+### 1. 이름
+박현범
+### 2. 사진
+생략
+### 3. MBTI
+ESFP
+### 간단한 인사멘트
+거주지 : 인천   
+전공 : 한서대 항공소프트웨어공학과  
+수료 할 때 까지 잘 부탁드립니다 !
