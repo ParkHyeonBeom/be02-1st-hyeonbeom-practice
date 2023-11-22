@@ -1,3 +1,5 @@
+package day02;
+
 public class ex05{
     public static void main(String[] args) {
         int [] input = new int[10];

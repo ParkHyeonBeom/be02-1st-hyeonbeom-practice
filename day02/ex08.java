@@ -1,4 +1,5 @@
-import java.util.*;
+package day02;
+
 public class ex08{
     public static void main(String[] args) {
         int lotto[] = new int[6];
