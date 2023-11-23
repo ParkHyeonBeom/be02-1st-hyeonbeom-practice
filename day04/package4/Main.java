@@ -6,16 +6,22 @@ public class Main {
         int array[] = new int[4];
         Player p1 = new Player();
         Player p2 = new Player();
+
         System.out.println("게임시작");
-        for (int i = 1; i < 4; i++)
+
+        while(p1.heart > 0 || p2.heart > 0)
         {
-            array[i] = (int) (Math.random() * 3) + 1;
-            for (int j = 1; j < i; j++)
-                if (array[i] == array[j]) {
-                    i--;
+            if(p1.score >=3)
+                break;
+            else if(p1.heart>0 && p2.heart>0)
+            {
+                for (int i = 1; i < 4; i++) {
+                    array[i] = (int) (Math.random() * 3) + 1;
+                    for (int j = 1; j < i; j++)
+                        if (array[i] == array[j]) {
+                            i--;
+                        }
                 }
-        }
-        Scanner scanner = new Scanner(System.in);
                 System.out.println("플레이어 1은 숫자를 입력해주세요.");
                 int a = scanner.nextInt();
                 if (array[a] == 1) {
@@ -26,6 +32,8 @@ public class Main {
                     System.out.println("플레이어 1의 하트 갯수는 " + p1.heart + " 입니다.");
                 } else
                     p1.bomb();
+
+
                 for (int i = 1; i < 4; i++) {
                     array[i] = (int) (Math.random() * 3) + 1;
                     for (int j = 1; j < i; j++)
@@ -33,6 +41,7 @@ public class Main {
                             i--;
                         }
                 }
+
                 System.out.println("플레이어 2는 숫자를 입력해주세요.");
                 int b = scanner.nextInt();
                 if (array[b] == 1) {
@@ -59,6 +68,7 @@ public class Main {
             }
             else if(p2.heart==0)
             {
+
                 System.out.println("플레이어 2는 숫자를 입력해주세요.");
                 int a = scanner.nextInt();
                 if (array[a] == 1) {
