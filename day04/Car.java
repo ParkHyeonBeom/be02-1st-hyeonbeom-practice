@@ -29,6 +29,10 @@ public class Car {
         this.name = name;
     }
 
+    public String getName() {
+        return name;
+    }
+
     public void result() {
         for (int i=0 ; i<this.location ; i++)
             System.out.print("-");

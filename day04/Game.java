@@ -1,8 +1,10 @@
 package day04;
+
 import day04.package3.Card;
 import day04.package4.PlayerT;
 
 import java.util.Scanner;
+
 public class Game {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -32,6 +34,19 @@ public class Game {
                     car[j].result();
             }
             System.out.println();
+        }
+
+        int max=car[0].getLocation();
+        for(int q=0 ; q<car.length ; q++)
+        {
+            if(car[q].getLocation()>max)
+                max = car[q].getLocation();
+        }
+
+        for(int x=0 ; x<car.length ; x++)
+        {
+            if(car[x].getLocation()==max)
+                System.out.print(car[x].getName());
         }
     }
 }
